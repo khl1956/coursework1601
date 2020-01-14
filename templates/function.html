@@ -1,0 +1,27 @@
+{% include "header.html" %}
+
+{% block body %}
+    {% for row in rows %}
+    <div class="center">
+        <h2>{{ row.0 }}</h2>
+        <h5>{{ row.1 }}</h5>
+        <table class="table table-striped">
+            <tr>
+                <th>Test case</th>
+                <th>Result</th>
+            </tr>
+            {% for r in row.2 %}
+                <tr style='background-color: {{ r.2 }}'>
+                    <td width="50%">{{r.0}}</td>
+                    <td width="50%">{{r.1}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endfor %}
+
+{% if message != None %}
+    <p>{{ message }}</p>
+{% endif %}
+
+{% endblock %}
