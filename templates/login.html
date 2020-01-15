@@ -1,0 +1,16 @@
+{% include "header.html" %}
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block body %}
+
+<form method=post enctype=multipart/form-data action="/login">
+    {{ form.csrf_token }}
+    {{ wtf.form_field(form.email) }}
+    {{ wtf.form_field(form.password) }}
+    {{ wtf.form_field(form.login)  }}
+</form>
+
+{{ message }}
+
+{% endblock %}
