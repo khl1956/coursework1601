@@ -18,7 +18,7 @@ filetype==1.0.5
 flake8==3.7.8
 Flask==1.1.1
 Flask-Bootstrap==3.3.7.1
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 Flask-Mail==0.9.1
 Flask-SQLAlchemy==2.4.0
 Flask-WTF==0.14.2
