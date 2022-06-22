@@ -44,7 +44,7 @@ moviepy==0.2.3.2
 mutagen==1.42.0
 mysql-connector==2.2.9
 mysql-connector-python==8.0.17
-numpy==1.16.4
+numpy==1.22.0
 pdoc3==0.7.2
 Pillow==6.1.0
 plotly==4.4.1
